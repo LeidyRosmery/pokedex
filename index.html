@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="main.css">
+  <title>Document</title>
+</head>
+<body>
+  <div id="pokemonChooser">
+    Choose a Pokémon<br />
+<select id="pokeSelector"></select>
+<button id="pokeSearchButton">Select</button>
+</div>
+
+<div id="page_content">
+
+<div id="name"></div>
+<span id="species"></span>
+<div id="sprites">
+</div>
+Type(s): <span id="types"></span><br />
+National Pokédex #: <span id="national_id"></span><br /><br />
+<!--Pokedex ID: <span id="pkdx_id"></span><br />-->
+<table id="stats">
+    <tr>
+        <th>HP</th><th>Atk</th><th>Def</th><th>SpAtk</th><th>SpDef</th><th>Spd</th><th>Total</th>
+    </tr>
+    <tr>
+        <td id="hp"></td>
+        <td id="attack"></td>
+        <td id="defense"></td>
+        <td id="sp_atk"></td>
+        <td id="sp_def"></td>
+        <td id="speed"></td>
+        <td id="total"></td>
+    </tr>
+</table><br />
+<span class="sctTitle">Descriptions</span><div id="descriptions" class="itemContainer"></div><br />
+<table id="miscStats">
+    <tr>
+        <th>Catch Rate:</th><td id="catch_rate"></td>
+    </tr>
+    <tr>
+        <th>Egg Cycles:</th><td id="egg_cycles"></td>
+    </tr>
+    <tr>
+        <th>EV Yield:</th><td id="ev_yield"></td>
+    </tr>
+    <tr>
+        <th>EXP Yield:</th><td id="exp"></td>
+    </tr>
+    <tr>
+        <th>Growth Rate:</th><td id="growth_rate"></td>
+    </tr>
+    <tr>
+        <th>Base Happiness:</th><td id="happiness"></td>
+    </tr>
+    <tr>
+        <th>Height:</th><td id="height"></td>
+    </tr>
+    <tr>
+        <th>Weight:</th><td id="weight"></td>
+    </tr>
+    <tr>
+        <th>M/F Ratio:</th><td id="male_female_ratio"></td>
+    </tr>
+</table><br />
+<span class="sctTitle">Abilities</span><div id="abilities" class="itemContainer"></div><br />
+<span class="sctTitle">Evolutions</span><div id="evolutions" class="itemContainer"></div><br />
+<span class="sctTitle">Egg Groups</span><div id="egg_groups" class="itemContainer"></div><br />
+<div id="moves">
+    <span class="sctTitle">Tutor Moves</span>
+    <div id="tutor_moves" class="itemContainer"></div><br />
+    <span class="sctTitle">Machine Moves</span>
+    <div id="machine_moves" class="itemContainer"></div><br />
+    <span class="sctTitle">Egg Moves</span>
+    <div id="egg_moves" class="itemContainer"></div><br />
+    <span class="sctTitle">Level-Up Moves</span>
+    <div id="level_up_moves" class="itemContainer"></div><br />
+    <span class="sctTitle">Other</span>
+    <div id="other_moves" class="itemContainer"></div>
+</div>
+
+</div>
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js">
+
+</script>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
